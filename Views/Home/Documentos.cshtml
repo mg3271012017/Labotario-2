@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Documentos";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Asegúrate de que el layout existe
+}
+
+<main>
+    <h3 class="section-title">Documentos</h3>
+    <div class="documents-container">
+        <div class="document">
+            <strong>DUI:</strong> <span>04892341-8</span>
+        </div>
+        <div class="document">
+            <strong>NIT:</strong> <span>0614-140899-001-9</span>
+        </div>
+        <div class="document">
+            <strong>NUP:</strong> <span>06543210</span>
+        </div>
+        <div class="document">
+            <strong>ISSS:</strong> <span>147456789</span>
+        </div>
+        <div class="document">
+            <strong>Licencia de Conducir Vehículo:</strong> <span>Liviana</span>
+        </div>
+        <div class="document">
+            <strong>Licencia de Conducir Moto:</strong> <span>Moto</span>
+        </div>
+    </div>
+</main>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #9d9daf;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .section-title {
+        color: #000000; /* Azul para el título */
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+
+    .documents-container {
+        max-width: 600px; 
+        margin: 0 auto; 
+    }
+
+    .document {
+        background-color: #f9f9f9;
+        padding: 15px; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        margin-bottom: 20px; 
+        transition: transform 0.3s ease; 
+    }
+
+        .document:hover {
+            transform: scale(1.02); 
+        }
+
+        .document strong {
+            color: #000000;
+        }
+
+        .document span {
+            color: #4800ff;
+            font-weight: normal;
+        }
+</style>

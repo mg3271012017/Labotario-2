@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<header>
+    <div class="banner">
+        <h1>Bienvenido a la Página de José Moreno</h1>
+    </div>
+</header>
+
+<main>
+    <div class="profile-container">
+        <img src="@Url.Content("jose.jpeg")" alt="Foto de José Moreno" class="profile-pic">
+        <h3>Datos Personales</h3>
+        <ul class="profile-info">
+            <li><strong>Nombres:</strong> José Vladimir</li>
+            <li><strong>Apellidos:</strong> Moreno</li>
+            <li><strong>Sexo:</strong> Masculino</li>
+            <li><strong>Edad:</strong> 29</li>
+            <li><strong>Estado Civil:</strong> Soltero</li>
+            <li><strong>Nacionalidad:</strong> Salvadoreño</li>
+        </ul>
+    </div>
+</main>
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #9d9daf;
+        margin: 0;
+    }
+
+
+    .banner {
+        background-color: #000000;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+        .banner h1 {
+            margin: 0; 
+            font-size: 24px; 
+        }
+
+    .profile-container {
+        background-color: #000000;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+        margin: 50px auto;
+    }
+
+    .profile-pic {
+        width: 160px; 
+        height: 160px;
+        border-radius: 70%;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        color: #ffd800;
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+
+    .profile-info {
+        list-style-type: none; 
+        padding: 0;
+        margin: 0;
+    }
+
+        .profile-info li {
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .profile-info strong {
+            color: #ffd800; 
+        }
+
+   
+    .profile-container:hover {
+        transform: scale(1.02); /* Aumenta el tamaño del perfil al pasar el mouse */
+        transition: transform 0.3s ease; /* Transición suave */
+    }
+</style>

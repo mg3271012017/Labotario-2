@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Resumen";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Asegúrate de que el layout existe
+}
+
+<main>
+    <h3 class="section-title">Experiencia Laboral</h3>
+    <div class="experience-container">
+        <div class="experience">
+            <h4>Avianca SA de SV</h4>
+            <p><strong>Cargo:</strong> Soporte IT Junior</p>
+            <p><strong>Tiempo Laborado:</strong> 2 años</p>
+        </div>
+        <div class="experience">
+            <h4>Tigo El Salvador</h4>
+            <p><strong>Cargo:</strong> Help Desk Level 2</p>
+            <p><strong>Tiempo Laborado:</strong> 1 año</p>
+        </div>
+        <div class="experience">
+            <h4>Fintech</h4>
+            <p><strong>Cargo:</strong> Ingeniero de Software</p>
+            <p><strong>Tiempo Laborado:</strong> 6 meses</p>
+        </div>
+    </div>
+</main>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #9d9daf;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .section-title {
+        color: #000000;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .experience-container {
+        max-width: 600px;
+        margin: 0 auto; 
+    }
+
+    .experience {
+        background-color: #ffffff;
+        padding: 15px; 
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+        .experience:hover {
+            transform: scale(1.02);
+        }
+
+        .experience h4 {
+            margin: 0;
+            color: #4800ff;
+        }
+
+        .experience p {
+            margin: 5px 0; 
+            font-size: 16px; 
+        }
+</style>

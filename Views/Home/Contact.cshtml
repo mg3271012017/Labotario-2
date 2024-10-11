@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Contacto";
+}
+
+<main>
+    <h3 class="section-title">Contacto</h3>
+    <div class="contact-container">
+        <div class="contact-item">
+            <strong>Teléfono:</strong> <span>72894251</span>
+        </div>
+        <div class="contact-item">
+            <strong>Correo Electrónico:</strong> <span>jose.moreno@gmail.com</span>
+        </div>
+        <div class="contact-item">
+            <strong>Departamento:</strong> <span>San Salvador</span>
+        </div>
+        <div class="contact-item">
+            <strong>Municipio:</strong> <span>San Salvador</span>
+        </div>
+        <div class="contact-item">
+            <strong>Dirección:</strong> <span>Colonia Escalón</span>
+        </div>
+    </div>
+</main>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #9d9daf; /* Fondo claro */
+        margin: 0;
+        padding: 20px; /* Espaciado */
+    }
+
+    .section-title {
+        color: #000000; /* Azul para el título */
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center; /* Centramos el título */
+    }
+
+    .contact-container {
+        max-width: 600px; /* Ancho máximo del contenedor */
+        margin: 0 auto; /* Centramos el contenedor */
+    }
+
+    .contact-item {
+        background-color: #ffffff; /* Fondo blanco para cada contacto */
+        padding: 15px; /* Espaciado interno */
+        border-radius: 8px; /* Bordes redondeados */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        margin-bottom: 20px; /* Espacio entre contactos */
+        transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+    }
+
+        .contact-item:hover {
+            transform: scale(1.02); /* Aumenta el tamaño al pasar el mouse */
+        }
+
+        .contact-item strong {
+            color: #333; /* Color del texto fuerte */
+        }
+
+        .contact-item span {
+            color: #007BFF; /* Color azul para el texto de los números */
+            font-weight: normal; /* Normalizamos el peso del texto */
+        }
+</style>
